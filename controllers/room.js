@@ -1,6 +1,6 @@
 import Room from '../models/Rooms.js'
 import Hotel from '../models/Hotels.js'
-import { createError } from '../utils/error.js'
+
 
 
 export const createRoom = async (req,res,next) => {
@@ -43,7 +43,7 @@ export const deleteRoom = async (req,res,next) => {
         }
        res.status(200).json( 'Room has been deleted');
    } catch (error) {
-      next(error); 
+      next(error);  
    }
 }
 
